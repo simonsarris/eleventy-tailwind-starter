@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "./head.njk" %}
+    <title> {% block title %}TODO: Default Title{% endblock %} </title>
+  </head>
+  <body class="leading-normal tracking-normal text-xl">
+    {% block content %}
+      {{ content | safe }}
+    {% endblock %}
+  </body>
+</html>

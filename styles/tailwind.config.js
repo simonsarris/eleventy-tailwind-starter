@@ -1,11 +1,5 @@
 module.exports = {
-  purge: {
-    content: ["_site/**/*.html"],
-    options: {
-      // CSS classes that may get purged accidentally go here (for instance those used only on the 404 page)
-      // safelist: ["text-xs", "rounded-xl"]
-    },
-  },
+  content: ["./_site/**/*.{html,js}"],
   theme: {
     container: {
       center: true,
@@ -31,9 +25,5 @@ module.exports = {
       opacity: ['disabled'],
     }
   },
-  plugins: [],
-  future: {
-    purgeLayersByDefault: true,
-    defaultLineHeights: true
-  },
+  plugins: []
 };
