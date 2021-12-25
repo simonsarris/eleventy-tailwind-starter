@@ -1,14 +1,12 @@
 # eleventy-tailwind-starter
 
-website starter using Eleventy and Tailwind CSS 3
+website starter using [Eleventy](https://www.11ty.dev/) and [Tailwind CSS](https://tailwindcss.com/).
 
 To install: `npm i`
 
 To run live server: `npm run serve`
 
 To build for production: `npm run build`
-
-~~~
 
 All CSS is defined a single file, `/styles/tailwind.css`. Alongside it is `/styles/tailwind.config.js` which contains all non-tailwind colors used (currently none).
 
