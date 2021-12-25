@@ -16,22 +16,14 @@ module.exports = function (eleventyConfig) {
 
   // 11ty doesn't like "js" in setTemplateFormats, it will try to execute the script
   eleventyConfig.addPassthroughCopy(`${inputDir}/**/*.js`);
-  eleventyConfig.addPassthroughCopy(`${inputDir}/**/*.ts`);
-  eleventyConfig.addPassthroughCopy(`${inputDir}/**/*.mjs`);
-  eleventyConfig.addPassthroughCopy(`${inputDir}/**/*.config`); // for web.configs
+  eleventyConfig.addPassthroughCopy(`${inputDir}/**/*.config`); // for web.configs if using IIS
   eleventyConfig.addPassthroughCopy(`${inputDir}/robots.txt`);
 
-  // // Copy images
+  // Anything you want 11ty to copy over
   eleventyConfig.setTemplateFormats([
-    "png",
-    "jpg",
-    "jpeg",
-    "gif",
-    "webp",
-    "svg",
-    "html",
-    "njk",
-    "css", // for prism.css, etc
+    "png", "jpg", "jpeg", "gif", "webp", "svg",
+    "html", "njk",
+    "css", // for prism.css or other libraries you might add
     "json",
     "xml",
     "ico" // favicon

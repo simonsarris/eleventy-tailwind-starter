@@ -16,9 +16,10 @@ Templates are in `/_includes`
 
 ## Package why:
 * `11ty`: static site generator
-* `tailwind`: CSS
-* `postcss`: CSS processing, necessary for tailwind
-* `postcss`: CSS processing, necessary for tailwind (on Windows at least)
+* `tailwindcss`: CSS framework
+* `postcss`: CSS processing
+* `autoprefixer`: postcss plugin, needed for tailwind
+* `cssnano`: postcss plugin, for CSS minification
 * `cross-env`: cross platform setting env vars in npm scripts
 * `concurrently`: cross platform (works in windows) instead of `&` in npm scripts
 * `npm-run-all`: to run multiple npm scripts in the `package.json`
