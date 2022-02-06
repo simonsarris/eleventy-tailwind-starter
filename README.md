@@ -4,15 +4,11 @@ website starter using [Eleventy](https://www.11ty.dev/) and [Tailwind CSS](https
 
 To install: `npm i`
 
-To run live server: `npm run serve`
+To run live server: `npm run serve`, you can then navigate to [localhost:8080](localhost:8080) to view the site.
 
-You can then navigate to `localhost:8080` to view the site.
+To build for production: `npm run build`, the output is in the folder `/_site`
 
-To build for production: `npm run build`
-
-The output is in the folder `/_site`
-
-All CSS is defined a single file, `/styles/tailwind.css`. Alongside it is `/styles/tailwind.config.js` which contains all non-tailwind colors used (currently none).
+All CSS is defined a single file, `/styles/tailwind.css`. Alongside it is `/styles/tailwind.config.js` which contains config (eg, for custom colors)
 
 Site content is in `/site`
 
