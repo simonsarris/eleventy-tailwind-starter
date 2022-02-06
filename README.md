@@ -1,6 +1,6 @@
 # eleventy-tailwind-starter
 
-website starter using [Eleventy](https://www.11ty.dev/) and [Tailwind CSS](https://tailwindcss.com/).
+A static website starter project using [Eleventy](https://www.11ty.dev/) and [Tailwind CSS](https://tailwindcss.com/).
 
 To install: `npm i`
 
